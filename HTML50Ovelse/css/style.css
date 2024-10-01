@@ -1,0 +1,14 @@
+html{
+    font-size: 18px;
+}
+header{
+    background-image: -moz-element(#202020);
+    background-size: cover;
+    text-transform: uppercase;
+    padding: 0%;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+footer{
+    width: 100%
+}
