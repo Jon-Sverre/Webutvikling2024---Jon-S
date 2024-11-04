@@ -3,7 +3,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
@@ -27,13 +27,35 @@ header{
 
 nav{
     background-color:aliceblue;
+
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 main{
+    display: flex;
+    flex-wrap: wrap;
     background-color: blanchedalmond;
     width: 70%;
     min-width: 500px;
+    justify-content: space-between;
 }
+
+main h2{
+    width: 100%;
+}
+
+main article{
+    width: 30%;
+    min-width: 250px;
+    flex-grow: 1;
+}
+
 aside{
     background-color:blueviolet;
     width: 30%;
