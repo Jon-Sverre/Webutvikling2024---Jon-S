@@ -1,32 +1,141 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#grid-container{
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto auto auto auto;
+/* Grunnleggende styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
 }
 
-header{
-    background-color: aqua;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start:
-
+/* Header-styling */
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav{
-    background-color: beige;
+header h1 {
+    font-size: 1.5rem;
 }
 
-main{
-    background-color: blue;
+header nav {
+    display: flex;
+    gap: 1rem;
 }
 
-aside{
-    background-color: burlywood;
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-footer{
-    background-color: crimson;
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hovedinnhold */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main .hero {
+    text-align: center;
+    background-color: #e1f5fe;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+main .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+main .hero button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main .hero button:hover {
+    background-color: #0056b3;
+}
+
+/* Produktseksjon */
+main .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+main .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+main .product-card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+main .product-card h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+main .product-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+main .product-card button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main .product-card button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
 }

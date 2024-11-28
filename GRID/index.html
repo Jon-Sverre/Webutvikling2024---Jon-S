@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS GRID LAYOUT</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>CSS GRID LAYOUT</title>
+    <title>Produkter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="grid-container">
-        <header>
-            <h1>CSS grid layout</h1>
-        </header>
+    <header>
+        <h1>Min Nettbutikk</h1>
         <nav>
-            <ul>
-                <li><a href="#"">Hjem</a></li>
-                <li><a href="#"">Produkter</a></li>
-                <li><a href="#"">Om oss</a></li>
-                <li><a href="#"">Blogg</a></li>
-            </ul>
+            <a href="#">Hjem</a>
+            <a href="#">Produkter</a>
+            <a href="#">Kontakt</a>
         </nav>
-        <main>
-            <h2>Hovedområde</h2>
-        </main>
-        <aside>
-            <h4>Sideområde</h4>
-        </aside>
-        <footer>
-            <p>@jssagari</p>
-        </footer>
+    </header>
 
-    </div>
+    <main>
+        <section class="hero">
+            <h2>Velkommen til vår butikk!</h2>
+            <p>Utforsk vårt utvalg av fantastiske produkter.</p>
+            <button>Se produkter</button>
+        </section>
+
+        <section class="products">
+            <div class="product-card">
+                <img src="produkt1.jpg" alt="Produkt 1">
+                <h3>Produkt 1</h3>
+                <p>Beskrivelse av produktet.</p>
+                <button>Kjøp nå</button>
+            </div>
+            <div class="product-card">
+                <img src="produkt2.jpg" alt="Produkt 2">
+                <h3>Produkt 2</h3>
+                <p>Beskrivelse av produktet.</p>
+                <button>Kjøp nå</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Min Nettbutikk. Alle rettigheter reservert.</p>
+    </footer>
 </body>
 </html>
